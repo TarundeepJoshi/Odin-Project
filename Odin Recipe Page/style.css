@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.recipe-1{
+    border: 1px solid rgb(210, 210, 210);
+
+    width: 283.3px;
+    height: 290px;
+}
+
+.recipe-1 .description{
+    padding: 0.3rem;
+}
+
+.recipe-1 .description p{
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-1 .description h3{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+.recipe-1 .description h3:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+@media (min-width: 601px) and (max-width: 1260px){
+    .recipes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .recipes{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
