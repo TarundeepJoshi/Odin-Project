@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section-1 {
+    background-color: #1f2937;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+}
+
+.logo h3 {
+    color: #f9faf8;
+    font-size: 24px;
+    transition: all 0.2s ease-in;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h3:hover {
+    cursor: pointer;
+    color: orange;
+    text-decoration: underline;
+}
+
+.navbar a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 1.2rem;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 0.2rem;
+    transition: all 0.3s ease-in;
+}
+
+.navbar ul li:hover {
+    background-color: white;
+    border-radius: 0.2rem;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .logo h3 {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 0.5rem;
+    }
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section .info h1 {
+    font-size: 30px;
+    color: #f9faf8;
+    margin-bottom: 0.2rem;
+}
+
+.hero-section .info p {
+    color: red;
+    margin-bottom: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-section .info h3 {
+    color: #f9faf8;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .hero-section .info h1 {
+        font-size: 19px;
+    }
+
+    .hero-section .info p {
+        font-size: 14px;
+    }
+
+    .hero-section .info h3 {
+        font-size: 13px;
+    }
+}
+
+
+.section-2 {
+    padding: 1rem;
+}
+
+.section-2-title {
+    color: #1f2937;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-2-title span {
+    color: red;
+}
+
+.items {
+    display: flex;
+}
+
+.items img {
+    border-radius: 0.5rem;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.items img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.section-2 .item-1-details {
+    text-align: center;
+}
+
+.section-2 .item-1-details h3,
+.item-2-details h3,
+.item-3-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.section-2 .item-1-details p,
+.item-2-details p,
+.item-3-details p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.item-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .section-2-title {
+        font-size: 18px;
+    }
+
+    .items {
+        display: inline;
+    }
+
+    .item-2 {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .item-1-details {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.section-3 {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+}
+
+.section-3 h2 {
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.section-4 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section-4-content {
+    background-color: #3882f6;
+    height: 100px;
+    width: 50%;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-container h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.sign-btn button {
+    border: 1px solid white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: #3882f6;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.sign-btn button:hover {
+    background-color: white;
+    color: #3882f6;
+    font-weight: 500;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .section-4-content{
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+    }
+    .sign-container h4 {
+        font-size: 14px;
+    }
+    .sign-container p{
+        font-size: 12px;
+    }
+}
+
+.section-5 {
+    background-color: #1f2937;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.section-5 h3 {
+    font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 440px){
+    .section-5 h3{
+        font-size: 15px;
+    }
+}
